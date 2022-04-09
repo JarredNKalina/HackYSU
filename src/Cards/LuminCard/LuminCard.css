@@ -1,0 +1,12 @@
+.percentage{
+    color:black
+}
+
+.lumin-card{
+    background-color: #c4c4c4;
+    grid-area: lumin;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

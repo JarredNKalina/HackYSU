@@ -1,0 +1,12 @@
+.percentage{
+    color:black;
+    font-size: 2rem;
+}
+.temp-card{
+    background-color: #c4c4c4;
+    grid-area: temp;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
