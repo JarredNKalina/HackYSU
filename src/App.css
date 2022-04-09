@@ -12,19 +12,24 @@
   grid-template-areas:
   ". temp moist"
   "humidity lumin ."
-  ". button . "
-   ;
+  ". button . ";
   grid-template-rows: 1fr 1fr 1fr;
-  
 }
 
+.pump{
+  margin: 1rem;
+ grid-area: button;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
 .pump{
+  background-color: #9CDDAA;
   grid-area: button;
+  border-width: 1px;
+  border-radius: 70%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
