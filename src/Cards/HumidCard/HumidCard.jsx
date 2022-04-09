@@ -1,13 +1,13 @@
 import "./HumidCard.css"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCloud } from '@fortawesome/free-solid-svg-icons'
+import { AiOutlineCloud } from 'react-icons/ai'
+import "../Card.css"
+import "../Icons.css"
 export const HumidCard = ()=>{
     return(
-        <div className="humid-card">
-            
+        <div id='humid-card' className="card">
+
             <p className="percentage">72%</p>
-            <FontAwesomeIcon icon={faCloud}/>
-            <cloudIcon/>
+            <AiOutlineCloud className="icon" size={60} />
         </div>
     )
 }

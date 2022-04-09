@@ -1,10 +1,12 @@
 import "./MoistCard.css"
-import {waterIcon} from "../../icons/Water"
+import "../Card.css"
+import { MdOutlineWaterDrop } from "react-icons/md"
+import "../Icons.css"
 export const MoistCard = ()=>{
     return(
-        <div className="moist-card">
+        <div id="moist-card" className="card">
             <p className="percentage">72%</p>
-            <waterIcon/>
+            <MdOutlineWaterDrop className="icon" size={60}/>
         </div>
     )
 }

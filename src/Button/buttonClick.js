@@ -1,22 +1,22 @@
 import { useState } from "react"
+import './button.css'
 
 function buttonStyle(status) {
   if (status) {
-    document.getElementById('pump').innerHTML = "Pump On"
-    document.getElementById('pump').style.backgroundColor = 'green'
+    document.getElementById('red-pump').innerHTML = "Pump On"
+    document.getElementById('red-pump').id = 'green-pump'
   }
   else {
-    document.getElementById('pump').innerHTML = "Pump Off"
-    document.getElementById('pump').style.backgroundColor = 'red'
+    document.getElementById('green-pump').innerHTML = "Pump Off"
+    document.getElementById('green-pump').id = 'red-pump'
   }
 }
 
 export function ButtonClick() {
 
-  const [clickStatus, setClickStatus] = useState(true)
+  const [clickStatus, setClickStatus] = useState(false)
 
   return (
-    <button id='pump' onClick={() => setClickStatus(clickStatus ? (buttonStyle(false), false) : (buttonStyle(true),true))}>Click me to turn on Pump</button>
+    <div id='red-pump' className="pump" onClick={() => setClickStatus(clickStatus ? (buttonStyle(false), false) : (buttonStyle(true),true))}>Pump Off</div>
   )
 }
-

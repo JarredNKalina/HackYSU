@@ -1,0 +1,22 @@
+#red-pump {
+  border: 1px solid #ff3c3c;
+  background-color: rgb(255, 105, 105);
+}
+
+#green-pump {
+  background-color: rgb(127, 254, 127);
+  border:1px solid rgb(61, 218, 61);
+}
+
+.pump {
+  font-size: 32px;
+  color: black;
+  grid-area: button;
+  margin: 1rem;
+  margin-left: 3rem;
+  border-radius: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 4px 4px black;
+}
