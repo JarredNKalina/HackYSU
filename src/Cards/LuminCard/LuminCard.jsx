@@ -15,14 +15,31 @@ const WhichIconToRender = (props) => {
     }
 }
 
+const WhichCardToRender = (props) => {
+    if (props.lum >= 50) {
+        return(
+            <div id="green-lumin-card" className="card">
+                <p className="percentage">{props.lum}%</p>
+                <WhichIconToRender lum = {props.lum} />
+            </div>
+        )
+    }
+    else {
+        return(
+            <div id="red-lumin-card" className="card">
+                <p className="percentage">{props.lum}%</p>
+                <WhichIconToRender lum = {props.lum} />
+            </div>
+        )
+    }
+}
+
+
 export const LuminCard = ()=>{
 
-    const lum = 45;
+    const lum = 65;
 
     return(
-        <div id = "lumin-card" className="card">
-            <p className="percentage">{lum}%</p>
-            <WhichIconToRender lum={lum} />
-        </div>
+        <WhichCardToRender lum={lum} />
     )
 }

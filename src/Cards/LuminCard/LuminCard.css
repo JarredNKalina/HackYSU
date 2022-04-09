@@ -1,3 +1,10 @@
-#lumin-card{
+#green-lumin-card{
     grid-area: lumin;
+    background-color: rgb(127, 254, 127);
+
+}
+
+#red-lumin-card{
+    grid-area: lumin;
+    background-color: rgb(255, 105, 105);
 }
