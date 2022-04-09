@@ -2,7 +2,9 @@ import { MoistCard } from "./Cards/MoistCard/MoistCard";
 import { TempCard } from "./Cards/TempCard/TempCard";
 import { HumidCard } from "./Cards/HumidCard/HumidCard";
 import { LuminCard } from "./Cards/LuminCard/LuminCard";
+import { ButtonClick } from "./Button/buttonClick";
 import "./App.css";
+
 function App() {
   return (
     <div className="App">
@@ -10,7 +12,7 @@ function App() {
       <MoistCard />
       <TempCard />
       <HumidCard />
-      <button className="pump"></button>
+      <ButtonClick />
     </div>
   );
 }
