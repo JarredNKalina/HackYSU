@@ -1,12 +1,4 @@
-.percentage{
-    color:black
-}
-
-.moist-card{
-    background-color: #c4c4c4;
+#moist-card{
     grid-area: moist;
-    margin: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-right: 3rem;
 }

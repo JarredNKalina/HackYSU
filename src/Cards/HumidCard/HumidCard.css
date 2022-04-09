@@ -1,12 +1,4 @@
-.percentage{
-    color:black
-}
-
-.humid-card{
-    background-color: #c4c4c4;
+#humid-card{
     grid-area: humidity;
-    margin: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-left: 3rem;
 }
