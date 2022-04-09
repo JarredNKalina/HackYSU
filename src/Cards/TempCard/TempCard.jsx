@@ -1,6 +1,7 @@
 import "./TempCard.css"
 import "../Card.css"
 import { BsThermometerSun, BsThermometerHalf, BsThermometerSnow }  from "react-icons/bs"
+import { data } from '../database.js'
 
 const WhichIconToRender = (props) => {
     if (props.temp >= 75) {
@@ -20,7 +21,7 @@ const WhichIconToRender = (props) => {
 
 export const TempCard = () => {
 
-    const temp = 50;
+    const temp = data(temp_value);
     console.log(WhichIconToRender(temp))
     return(
         <div id="temp-card" className="card">
