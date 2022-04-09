@@ -1,7 +1,6 @@
 import "./LuminCard.css"
 import "../Card.css"
 import { BsSun, BsCloudSun } from "react-icons/bs"
-import "../Icons.css"
 
 const WhichIconToRender = (props) => {
     if (props.lum >= 50) {

@@ -1,6 +1,5 @@
 import "./TempCard.css"
 import "../Card.css"
-import "../Icons.css"
 import { BsThermometerSun, BsThermometerHalf, BsThermometerSnow }  from "react-icons/bs"
 
 const WhichIconToRender = (props) => {

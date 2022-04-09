@@ -1,7 +1,6 @@
 import "./HumidCard.css"
 import { AiOutlineCloud } from 'react-icons/ai'
 import "../Card.css"
-import "../Icons.css"
 export const HumidCard = ()=>{
     return(
         <div id='humid-card' className="card">
