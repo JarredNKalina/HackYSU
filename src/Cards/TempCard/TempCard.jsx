@@ -18,14 +18,11 @@ const WhichIconToRender = (props) => {
     }
 }
 
-export const TempCard = () => {
-
-    const temp = 50;
-    console.log(WhichIconToRender(temp))
+export const TempCard = ({temperature}) => {
     return(
         <div id="temp-card" className="card">
-            <p className="percentage">{temp}°</p>
-            <WhichIconToRender temp={temp}/>
+            <p className="percentage">{temperature}°</p>
+            <WhichIconToRender temp={temperature}/>
         </div>
     )
 }

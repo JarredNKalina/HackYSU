@@ -15,14 +15,13 @@ const WhichIconToRender = (props) => {
     }
 }
 
-export const LuminCard = ()=>{
+export const LuminCard = ({luminosity})=>{
 
-    const lum = 45;
 
     return(
         <div id = "lumin-card" className="card">
-            <p className="percentage">{lum}%</p>
-            <WhichIconToRender lum={lum} />
+            <p className="percentage">{luminosity}%</p>
+            <WhichIconToRender lum={luminosity} />
         </div>
     )
 }
