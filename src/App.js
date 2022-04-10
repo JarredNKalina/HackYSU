@@ -17,9 +17,9 @@ function App() {
   const [plantData, setPlantData] = useState(null)
   useEffect(()=> {
     const fetchPlantData = async () =>{
-      const rawPlantDataResponse = await fakeAPIResults;
-      //const plantDataResponse = await rawPlantDataResponse.json();
-      const plantDataResponse = await JSON.parse(rawPlantDataResponse);
+      const rawPlantDataResponse = await fetch('127.0.0.1:5000/sensors');
+      const plantDataResponse = await rawPlantDataResponse.json();
+      //const plantDataResponse = await JSON.parse(rawPlantDataResponse);
       setPlantData(plantDataResponse);
       console.log(rawPlantDataResponse);
       
@@ -34,7 +34,7 @@ function App() {
     <div className="App">
       <LuminCard luminosity={plantData.luminosity_value}/>
       <MoistCard moisture={plantData.moisture_value}/>
-      <TempCard temperature={plantData.temperature_value}/>
+      <TempCard temperature={plantData.temperature}/>
       <HumidCard humidity={plantData.humidity_value}/>
       <ButtonClick />
     </div>
