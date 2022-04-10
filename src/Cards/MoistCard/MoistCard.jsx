@@ -22,7 +22,7 @@ const WhichCardToRender = (props) => {
 }
 
 export const MoistCard = ()=>{
-    const moist = 80
+    const moist = 25
 
     return(
         <WhichCardToRender moist={moist} />
