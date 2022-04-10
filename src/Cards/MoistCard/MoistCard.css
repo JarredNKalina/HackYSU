@@ -1,4 +1,11 @@
-#moist-card{
+#green-moist-card{
     grid-area: moist;
     margin-right: 3rem;
+    background-color: rgb(127, 254, 127);
+}
+
+#red-moist-card{
+    grid-area: moist;
+    margin-right: 3rem;
+    background-color: rgb(255, 105, 105);
 }

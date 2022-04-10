@@ -1,3 +1,9 @@
-#temp-card{
+#green-temp-card{
     grid-area: temp;
+    background-color: rgb(127, 254, 127);
+}
+
+#red-temp-card{
+    grid-area: temp;
+    background-color: rgb(255, 105, 105);
 }
