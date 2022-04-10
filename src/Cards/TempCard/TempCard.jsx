@@ -14,7 +14,7 @@ const WhichIconToRender = (props) => {
         )
     }
     else {
-       <BsThermometerSnow className="icon"  size={60} />
+        return(<BsThermometerSnow className="icon"  size={60} />)
     }
 }
 
