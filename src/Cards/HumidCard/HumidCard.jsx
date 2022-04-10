@@ -28,5 +28,5 @@ export const HumidCard = ()=>{
 
     return(
         <WhichCardToRender humid={humid} />
-    )
+    );
 }
