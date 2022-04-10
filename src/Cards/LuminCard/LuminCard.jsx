@@ -35,11 +35,10 @@ const WhichCardToRender = (props) => {
 }
 
 
-export const LuminCard = ()=>{
+export const LuminCard = ({luminosity})=>{
 
-    const lum = 65;
 
     return(
-        <WhichCardToRender lum={lum} />
+        <WhichCardToRender lum={luminosity}/>
     )
 }

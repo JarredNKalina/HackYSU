@@ -1,6 +1,6 @@
 import "./MoistCard.css"
 import "../Card.css"
-import { MdOutlineWaterDrop } from "react-icons/md"
+import {MdOutlineWaterDrop} from "react-icons/md"
 
 const WhichCardToRender = (props) => {
     if (props.moist >= 50) {
@@ -21,10 +21,8 @@ const WhichCardToRender = (props) => {
     }
 }
 
-export const MoistCard = ()=>{
-    const moist = 25
-
+export const MoistCard = ({moisture})=>{
     return(
-        <WhichCardToRender moist={moist} />
+<WhichCardToRender moist={moisture}/>
     )
 }

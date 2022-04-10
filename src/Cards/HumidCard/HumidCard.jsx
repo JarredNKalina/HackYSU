@@ -22,11 +22,8 @@ const WhichCardToRender = (props) => {
 }
 
 
-export const HumidCard = ()=>{
-
-    const humid = 45
-
+export const HumidCard = ({humidity})=>{
     return(
-        <WhichCardToRender humid={humid} />
-    );
+        <WhichCardToRender humid={humidity}/>
+    )
 }

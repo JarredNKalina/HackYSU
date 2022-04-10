@@ -2,6 +2,7 @@ import "./TempCard.css";
 import "../Card.css";
 import { BsThermometerSun, BsThermometerHalf, BsThermometerSnow }  from "react-icons/bs";
 
+
 const WhichIconToRender = (props) => {
     if (props.temp >= 72) {
         return (
@@ -14,6 +15,7 @@ const WhichIconToRender = (props) => {
         )
     }
     else {
+
         return (
             <BsThermometerSnow className="icon" size={60} />
         );
@@ -39,10 +41,10 @@ const WhichCardToRender = (props) => {
     }
 }
 
-export const TempCard = () => {
-    const temp = 60;
 
+export const TempCard = ({temperature}) => {
     return(
-        <WhichCardToRender temp= {temp}/>
-    );
+<WhichCardToRender temp={temperature} />
+    )
 }
+
