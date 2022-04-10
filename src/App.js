@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 
 const fakeAPIResults=`{
   "humidity_value": 14,
-  "temperature_value": 75,
+  "temp_value": 75,
   "moisture_value": 88,
   "luminosity_value": 33
 }`
@@ -17,9 +17,9 @@ function App() {
   const [plantData, setPlantData] = useState(null)
   useEffect(()=> {
     const fetchPlantData = async () =>{
-      const rawPlantDataResponse = await fetch('127.0.0.1:5000/sensors');
-      const plantDataResponse = await rawPlantDataResponse.json();
-      //const plantDataResponse = await JSON.parse(rawPlantDataResponse);
+      const rawPlantDataResponse = await fakeAPIResults;
+      //const plantDataResponse = await rawPlantDataResponse.json();
+      const plantDataResponse = await JSON.parse(rawPlantDataResponse);
       setPlantData(plantDataResponse);
       console.log(rawPlantDataResponse);
       
