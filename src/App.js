@@ -34,7 +34,7 @@ function App() {
     <div className="App">
       <LuminCard luminosity={plantData.luminosity_value}/>
       <MoistCard moisture={plantData.moisture_value}/>
-      <TempCard temperature={plantData.temperature}/>
+      <TempCard temperature={plantData.temp_value}/>
       <HumidCard humidity={plantData.humidity_value}/>
       <ButtonClick />
     </div>
